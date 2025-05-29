@@ -1,0 +1,25 @@
+{
+  "module": "format json for gpt",
+  "input": [
+    {
+      "model": "gpt-3.5-turbo",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a strategic analyst for an intelligence watch focused on Indigenous Peoples, regenerative agriculture, climate finance, inclusive economic models, and entrepreneurship in vulnerable or traditional communities.\r\nYour role is to evaluate whether external articles are directly relevant to this scope.\r\nYou must respond in a structured and unambiguous format."
+        },
+        {
+          "role": "user",
+          "content": "Analyze the following article and determine whether it is relevant to this intelligence watch.\r\n\r\nRespond **only in the following JSON format**:\r\n\r\n{\r\n  \"relevance\": \"true\" | \"false\" | \"to_confirm\",\r\n  \"justification\": \"[a short paragraph explaining your reasoning, including whether it is directly aligned with the core themes or only indirectly linked]\"\r\n}\r\n\r\nRules:\r\n- `\"true\"` → at least one core theme is explicitly** addressed.\r\n- `\"false\"` → none of the core themes are addressed, not even indirectly.\r\n- `\"to_confirm\"` → the article might be **indirectly relevant** or ambiguously linked to the focus (e.g., general environmental themes, indirect impact on Indigenous communities, etc.).\r\n\r\nTitle: Call for contributors to support implementation of Regenerative Agriculture Revolution in CEE region during the period 2022-2024\r\n\r\nArticle:  What is the EIT Food Regenerative Agriculture Revolution..."
+        }
+      ],
+      "max_tokens": 200,
+      "temperature": 0
+    }
+  ],
+  "expected_output": [
+    {
+      "json": "{\"model\":\"gpt-3.5-turbo\",\"messages\":[{\"role\":\"system\",\"content\":\"You are a strategic analyst for an intelligence watch focused on Indigenous Peoples, regenerative agriculture, climate finance, inclusive economic models, and entrepreneurship in vulnerable or traditional communities.\\r\\nYour role is to evaluate whether external articles are directly relevant to this scope.\\r\\nYou must respond in a structured and unambiguous format.\"},{\"role\":\"user\",\"content\":\"Analyze the following article and determine whether it is relevant to this intelligence watch.\\r\\n\\r\\nRespond **only in the following JSON format**:\\r\\n\\r\\n{\\r\\n  \\\"relevance\\\": \\\"true\\\" | \\\"false\\\" | \\\"to_confirm\\\",\\r\\n  \\\"justification\\\": \\\"[a short paragraph explaining your reasoning, including whether it is directly aligned with the core themes or only indirectly linked]\\\"\\r\\n}\\r\\n\\r\\nRules:\\r\\n- `\\\"true\\\"` → at least one core theme is explicitly** addressed.\\r\\n- `\\\"false\\\"` → none of the core themes are addressed, not even indirectly.\\r\\n- `\\\"to_confirm\\\"` → the article might be **indirectly relevant** or ambiguously linked to the focus (e.g., general environmental themes, indirect impact on Indigenous communities, etc.).\\r\\n\\r\\nTitle: Call for contributors to support implementation of Regenerative Agriculture Revolution in CEE region during the period 2022-2024...\"}],\"max_tokens\":200,\"temperature\":0}"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "module": "initialise url",
+  "input": {
+    "bundle": "1Collection",
+    "variables": {
+      "url": {
+        "lifetime": "roundtrip",
+        "value": "https://www.eitfood.eu/news/call-for-contributors-to-support-implementation-of-regenerative-agriculture-revolution-in-cee-region-during-the-period-2022-2024-2"
+      }
+    }
+  },
+  "expected_output": {
+    "bundle": "1Collection",
+    "url": "https://www.eitfood.eu/news/call-for-contributors-to-support-implementation-of-regenerative-agriculture-revolution-in-cee-region-during-the-period-2022-2024-2"
+  }
+}

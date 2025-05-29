@@ -1,0 +1,14 @@
+{
+  "module": "add record",
+  "input": {
+    "bundle": "1Collection",
+    "key": "1cf696e4e71031217c6a9e25c8a9e7b9",
+    "record_collection": {
+      "overwrite": false
+    }
+  },
+  "expected_output": {
+    "bundle": "1Collection",
+    "key": "1cf696e4e71031217c6a9e25c8a9e7b9"
+  }
+}

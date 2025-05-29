@@ -1,0 +1,14 @@
+{
+  "module": "format gpt output in json",
+  "input": {
+    "bundle": "1Collection",
+    "text": "```json\n{\n  \"relevance\": \"true\",\n  \"justification\": \"The article directly addresses the implementation of the Regenerative Agriculture Revolution in the Central and Eastern Europe (CEE) region during the period 2022-2024. It focuses on providing training sessions, advisory services, and long-term soil monitoring to farmers in countries like Croatia, Estonia, Hungary, Latvia, Lithuania, Romania, Serbia, Slovakia, and Slovenia. The project aims to promote sustainable agriculture practices, which aligns with the core themes of regenerative agriculture and inclusive economic models in vulnerable communities.\"\n}\n```"
+  },
+  "expected_output": {
+    "bundle": "1Collection",
+    "json": {
+      "relevance": "true",
+      "justification": "The article directly addresses the implementation of the Regenerative Agriculture Revolution in the Central and Eastern Europe (CEE) region during the period 2022-2024. It focuses on providing training sessions, advisory services, and long-term soil monitoring to farmers in countries like Croatia, Estonia, Hungary, Latvia, Lithuania, Romania, Serbia, Slovakia, and Slovenia. The project aims to promote sustainable agriculture practices, which aligns with the core themes of regenerative agriculture and inclusive economic models in vulnerable communities."
+    }
+  }
+}

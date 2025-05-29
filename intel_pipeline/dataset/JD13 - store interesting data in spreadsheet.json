@@ -1,0 +1,43 @@
+{
+  "module": "store interesting data in spreadsheet",
+  "input": [
+    {
+      "mode": "fromAll",
+      "values": {
+        "0": "=HYPERLINK(https://www.eitfood.eu/news/call-for-contributors-to-support-implementation-of-regenerative-agriculture-revolution-in-cee-region-during-the-period-2022-2024-2)",
+        "1": "The article directly addresses the implementation of the Regenerative Agriculture Revolution in the Central and Eastern Europe (CEE) region during the period 2022-2024. It focuses on providing training sessions, advisory services, and long-term soil monitoring to farmers in countries like Croatia, Estonia, Hungary, Latvia, Lithuania, Romania, Serbia, Slovakia, and Slovenia. The project aims to promote sustainable agriculture practices, which aligns with the core themes of regenerative agriculture and inclusive economic models in vulnerable communities.",
+        "2": "funding",
+        "3": "",
+        "4": "grant_call, eligibility_details",
+        "5": "Regenerative Agriculture Revolution",
+        "6": "Central and Eastern Europe",
+        "7": "sustainable agriculture practices",
+        "8": "funding opportunity",
+        "9": "EIT Food",
+        "15": "Call for contributors to support implementation of Regenerative Agriculture Revolution in CEE region during the period 2022-2024., Eligible organizations include legal persons, higher education institutes, research institutes, and non-governmental organizations operating in specific target countries., Selected organizations will benefit from collaboration with EIT Food, subcontracting agreements, and support in organizing and implementing actions.",
+        "16": "A call for contributors has been issued to support the implementation of the Regenerative Agriculture Revolution in Central and Eastern Europe from 2022 to 2024. Eligible organizations in specific target countries can apply for funding opportunities to promote sustainable agriculture practices and receive support from EIT Food."
+      },
+      "sheetId": "INTERESTING",
+      "spreadsheetId": "/1PgxW5gFIS7GvWHgceR6k8AsLK9JV2Hk4SnUKEDTvZ4g",
+      "includesHeaders": true,
+      "insertDataOption": "INSERT_ROWS",
+      "valueInputOption": "USER_ENTERED",
+      "insertUnformatted": false
+    }
+  ],
+  "expected_output": [
+    {
+      "spreadsheetId": "1PgxW5gFIS7GvWHgceR6k8AsLK9JV2Hk4SnUKEDTvZ4g",
+      "tableRange": "INTERESTING!A1:Q3",
+      "updates": {
+        "spreadsheetId": "1PgxW5gFIS7GvWHgceR6k8AsLK9JV2Hk4SnUKEDTvZ4g",
+        "updatedRange": "INTERESTING!A4:Q4",
+        "updatedRows": 1,
+        "updatedColumns": 12,
+        "updatedCells": 12
+      },
+      "sheetName": "INTERESTING",
+      "rowNumber": 4
+    }
+  ]
+}

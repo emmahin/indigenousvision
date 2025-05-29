@@ -1,0 +1,94 @@
+{
+  "module": "call mercury",
+  "input": [
+    {
+      "ca": null,
+      "qs": [],
+      "url": "https://mesh-mercury-parser.fly.dev/",
+      "data": "{\r\n  \"url\": \"https://www.eitfood.eu/news/call-for-contributors-to-support-implementation-of-regenerative-agriculture-revolution-in-cee-region-during-the-period-2022-2024-2\",\r\n  \"clean\": true\r\n}",
+      "gzip": true,
+      "method": "post",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "timeout": null,
+      "useMtls": false,
+      "authPass": null,
+      "authUser": null,
+      "bodyType": "raw",
+      "contentType": "application/json",
+      "serializeUrl": false,
+      "shareCookies": false,
+      "parseResponse": true,
+      "followRedirect": true,
+      "useQuerystring": false,
+      "followAllRedirects": false,
+      "rejectUnauthorized": true
+    }
+  ],
+  "expected_output": [
+    {
+      "statusCode": 200,
+      "headers": [
+        {
+          "name": "x-powered-by",
+          "value": "Express"
+        },
+        {
+          "name": "content-type",
+          "value": "application/json; charset=utf-8"
+        },
+        {
+          "name": "content-encoding",
+          "value": "br"
+        },
+        {
+          "name": "etag",
+          "value": "W/\"b84-xI0sTmLL4hcxybs4tlXyRz61awM\""
+        },
+        {
+          "name": "date",
+          "value": "Thu, 29 May 2025 18:38:57 GMT"
+        },
+        {
+          "name": "connection",
+          "value": "keep-alive"
+        },
+        {
+          "name": "keep-alive",
+          "value": "timeout=5"
+        },
+        {
+          "name": "server",
+          "value": "Fly/6ededdcd (2025-05-29)"
+        },
+        {
+          "name": "via",
+          "value": "1.1 fly.io, 1.1 fly.io"
+        },
+        {
+          "name": "fly-request-id",
+          "value": "01JWENE3MKC37BJCCPC5DYBW9A-fra"
+        },
+        {
+          "name": "transfer-encoding",
+          "value": "chunked"
+        }
+      ],
+      "cookieHeaders": [],
+      "data": {
+        "title": "Call for contributors to support implementation of Regenerative Agriculture Revolution in CEE region during the period 2022-2024",
+        "url": "https://www.eitfood.eu/news/call-for-contributors-to-support-implementation-of-regenerative-agriculture-revolution-in-cee-region-during-the-period-2022-2024-2",
+        "date_published": null,
+        "lead_image_url": null,
+        "excerpt": "What is the EIT Food Regenerative Agriculture Revolution Regenerative Agriculture Revolution is a project aiming to help farmers in Central and Eastern Europe to learn about and transition to more…",
+        "word_count": 331,
+        "content": " What is the EIT Food Regenerative Agriculture Revolution..."
+      },
+      "fileSize": 2948
+    }
+  ]
+}

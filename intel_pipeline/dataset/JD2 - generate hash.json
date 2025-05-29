@@ -1,0 +1,16 @@
+{
+  "module": "generate hash",
+  "input": {
+    "bundle": "1Collection",
+    "variables": {
+      "hashid": {
+        "lifetime": "roundtrip",
+        "value": "1cf696e4e71031217c6a9e25c8a9e7b9"
+      }
+    }
+  },
+  "expected_output": {
+    "bundle": "1Collection",
+    "hashid": "1cf696e4e71031217c6a9e25c8a9e7b9"
+  }
+}

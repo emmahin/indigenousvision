@@ -1,0 +1,31 @@
+{
+  "module": "format metadata into fields",
+  "input": [
+    {
+      "json": "{\n    \"primary_vertical\": \"funding\",\n    \"vertical_subtags_news\": [],\n    \"vertical_subtags_funding\": [\"grant_call\", \"eligibility_details\"],\n    \"GPT_tags\": [\"Regenerative Agriculture Revolution\", \"Central and Eastern Europe\", \"sustainable agriculture practices\", \"funding opportunity\", \"EIT Food\"],\n    \"strategic_snippets\": [\n        \"Call for contributors to support implementation of Regenerative Agriculture Revolution in CEE region during the period 2022-2024.\",\n        \"Eligible organizations include legal persons, higher education institutes, research institutes, and non-governmental organizations operating in specific target countries.\",\n        \"Selected organizations will benefit from collaboration with EIT Food, subcontracting agreements, and support in organizing and implementing actions.\"\n    ],\n    \"summary_snippet\": \"A call for contributors has been issued to support the implementation of the Regenerative Agriculture Revolution in Central and Eastern Europe from 2022 to 2024. Eligible organizations in specific target countries can apply for funding opportunities to promote sustainable agriculture practices and receive support from EIT Food.\"\n}"
+    }
+  ],
+  "expected_output": [
+    {
+      "primary_vertical": "funding",
+      "vertical_subtags_news": [],
+      "vertical_subtags_funding": [
+        "grant_call",
+        "eligibility_details"
+      ],
+      "GPT_tags": [
+        "Regenerative Agriculture Revolution",
+        "Central and Eastern Europe",
+        "sustainable agriculture practices",
+        "funding opportunity",
+        "EIT Food"
+      ],
+      "strategic_snippets": [
+        "Call for contributors to support implementation of Regenerative Agriculture Revolution in CEE region during the period 2022-2024.",
+        "Eligible organizations include legal persons, higher education institutes, research institutes, and non-governmental organizations operating in specific target countries.",
+        "Selected organizations will benefit from collaboration with EIT Food, subcontracting agreements, and support in organizing and implementing actions."
+      ],
+      "summary_snippet": "A call for contributors has been issued to support the implementation of the Regenerative Agriculture Revolution in Central and Eastern Europe from 2022 to 2024. Eligible organizations in specific target countries can apply for funding opportunities to promote sustainable agriculture practices and receive support from EIT Food."
+    }
+  ]
+}

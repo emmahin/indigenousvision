@@ -1,0 +1,47 @@
+{
+  "module": "GPT add metadata",
+  "input": [
+    {
+      "ca": null,
+      "qs": [],
+      "url": "https://api.openai.com/v1/chat/completions",
+      "data": "{\r\n  \"model\": \"gpt-3.5-turbo\",\r\n  \"messages\": [\r\n    {\r\n      \"role\": \"system\",\r\n      \"content\": \"You are a strategic AI assistant helping classify and enrich content for a high-level intelligence monitoring system focused on Indigenous Peoples, agriculture, climate, funding, and innovation.\"\r\n    },\r\n    {\r\n      \"role\": \"user\",\r\n      \"content\": \"Analyze the following article and return a JSON object with the following fields: 1. primary_vertical: 'news' or 'funding' (based on whether the article is about general strategic developments or concrete funding opportunities). 2. vertical_subtags_news: if primary_vertical is 'news', choose any of the following applicable subtags: ['community_initiatives', 'systemic_movements', 'emerging_trends', 'other'] 3. vertical_subtags_funding: if primary_vertical is 'funding', choose any of the following applicable subtags: ['grant_call', 'fund_launch', 'eligibility_details', 'criteria_scope'] 4. GPT_tags: return up to 10 semantic tags that best describe the content 5. strategic_snippets: extract up to 3 meaningful and reusable sentences 6. summary_snippet: a 1-2 sentence summary of the article (max 80 words). Only return a valid JSON object. Only return a valid JSON object.Wrap the JSON response in triple backticks using the syntax:\\n```json\\n{...}\\n```...\"\r\n    }\r\n  ],\r\n  \"temperature\": 0.2,\r\n  \"max_tokens\": 600\r\n}",
+      "gzip": true,
+      "method": "post",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer [REDACTED]"
+        }
+      ],
+      "timeout": null,
+      "useMtls": false,
+      "authPass": null,
+      "authUser": null,
+      "bodyType": "raw",
+      "contentType": "application/json",
+      "serializeUrl": false,
+      "shareCookies": false,
+      "parseResponse": true,
+      "followRedirect": true,
+      "useQuerystring": false,
+      "followAllRedirects": false,
+      "rejectUnauthorized": true
+    }
+  ],
+  "expected_output": [
+    {
+      "statusCode": 200,
+      "data": {
+        "choices": [
+          {
+            "message": {
+              "role": "assistant",
+              "content": "```json\n{\n  \"primary_vertical\": \"funding\",\n  \"vertical_subtags_news\": [],\n  \"vertical_subtags_funding\": [\"grant_call\", \"eligibility_details\"],\n  \"GPT_tags\": [\n    \"Regenerative Agriculture Revolution\",\n    \"Central and Eastern Europe\",\n    \"sustainable agriculture practices\",\n    \"funding opportunity\",\n    \"EIT Food\"\n  ],\n  \"strategic_snippets\": [\n    \"Call for contributors to support implementation of Regenerative Agriculture Revolution in CEE region during the period 2022-2024.\",\n    \"Eligible organizations include legal persons, higher education institutes, research institutes, and non-governmental organizations operating in specific target countries.\",\n    \"Selected organizations will benefit from collaboration with EIT Food, subcontracting agreements, and support in organizing and implementing actions.\"\n  ],\n  \"summary_snippet\": \"A call for contributors has been issued to support the implementation of the Regenerative Agriculture Revolution in Central and Eastern Europe from 2022 to 2024. Eligible organizations in specific target countries can apply for funding opportunities to promote sustainable agriculture practices and receive support from EIT Food.\"\n}\n```"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
